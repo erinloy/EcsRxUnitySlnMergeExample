@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.cysharp.slnmerge": {
+      "version": "https://github.com/Cysharp/SlnMerge.git?path=src",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "ce96febfd75f515a37175fedafc5919c5d7a09ba"
+    },
     "com.unity.collab-proxy": {
       "version": "1.9.0",
       "depth": 0,
