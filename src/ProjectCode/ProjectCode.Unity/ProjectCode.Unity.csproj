@@ -18,6 +18,8 @@
 	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx.Plugins.ReactiveSystems\EcsRx.Plugins.ReactiveSystems.csproj" />
 	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx.Plugins.Views\EcsRx.Plugins.Views.csproj" />
 	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx\EcsRx.csproj" />
+	  <ProjectReference Include="..\ProjectCode.ExampleClassLibrary\ProjectCode.ExampleClassLibrary.csproj" />
+	  <ProjectReference Include="..\ProjectCode.ExampleEcsRxPlugin\ProjectCode.ExampleEcsRxPlugin.csproj" />
 	  <!--<ProjectReference Include="..\..\Depends\SystemsRx\src\SystemsRx.Infrastructure\SystemsRx.Infrastructure.csproj" />
 	  <ProjectReference Include="..\..\Depends\SystemsRx\src\SystemsRx.MicroRx\SystemsRx.MicroRx.csproj" />
 	  <ProjectReference Include="..\..\Depends\SystemsRx\src\SystemsRx.Plugins.Computeds\SystemsRx.Plugins.Computeds.csproj" />
