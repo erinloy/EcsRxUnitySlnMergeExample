@@ -1,7 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+	  <OutputType>Exe</OutputType>
+	  <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="robocopy $(OutDir) $(ProjectDir)..\..\UnityPlayer\Assets\Plugins\MyProject /mir /s /xf *.meta ProjectCode.Unity.* &#xD;&#xA;if %25errorlevel%25 leq 4 exit 0 else exit %25errorlevel%25" />
+	</Target>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx.Infrastructure\EcsRx.Infrastructure.csproj" />
+	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx.Plugins.Batching\EcsRx.Plugins.Batching.csproj" />
+	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx.Plugins.Computeds\EcsRx.Plugins.Computeds.csproj" />
+	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx.Plugins.GroupBinding\EcsRx.Plugins.GroupBinding.csproj" />
+	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx.Plugins.Persistence\EcsRx.Plugins.Persistence.csproj" />
+	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx.Plugins.ReactiveSystems\EcsRx.Plugins.ReactiveSystems.csproj" />
+	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx.Plugins.Views\EcsRx.Plugins.Views.csproj" />
+	  <ProjectReference Include="..\..\Depends\EcsRx\src\EcsRx\EcsRx.csproj" />
+	  <!--<ProjectReference Include="..\..\Depends\SystemsRx\src\SystemsRx.Infrastructure\SystemsRx.Infrastructure.csproj" />
+	  <ProjectReference Include="..\..\Depends\SystemsRx\src\SystemsRx.MicroRx\SystemsRx.MicroRx.csproj" />
+	  <ProjectReference Include="..\..\Depends\SystemsRx\src\SystemsRx.Plugins.Computeds\SystemsRx.Plugins.Computeds.csproj" />
+	  <ProjectReference Include="..\..\Depends\SystemsRx\src\SystemsRx\SystemsRx.csproj" />-->
+	</ItemGroup>
 
 </Project>
