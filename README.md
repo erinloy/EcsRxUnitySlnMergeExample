@@ -13,6 +13,9 @@ EcsRx Unity
 SlnMerge
 
 
+## Based on these instructions
+
+https://discord.com/channels/488609938399297536/488611200901578752/838476035996778497
 
 ## Notes
 
