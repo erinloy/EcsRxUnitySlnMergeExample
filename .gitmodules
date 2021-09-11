@@ -1,0 +1,3 @@
+[submodule "src/Depends/EcsRx"]
+	path = src/Depends/EcsRx
+	url = https://github.com/EcsRx/ecsrx.git
