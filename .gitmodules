@@ -1,3 +1,6 @@
 [submodule "src/Depends/EcsRx"]
 	path = src/Depends/EcsRx
 	url = https://github.com/EcsRx/ecsrx.git
+[submodule "src/Depends/SystemsRx"]
+	path = src/Depends/SystemsRx
+	url = https://github.com/EcsRx/SystemsRx.git
